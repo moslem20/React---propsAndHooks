@@ -1,0 +1,349 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color:#1b1b2d;
+}
+h1{
+  color: #38bdf8;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+input{
+  margin: 3px;
+  
+  background-color: #ADD8E6;
+}
+/* Main App Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1b1b2d, #2d3748); /* Subtle gradient background */
+  border-radius: 15px; /* Rounded edges for the main container */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+  text-align: center;
+}
+
+/* Navigation Links */
+nav {
+  margin: 20px 0;
+  background: #1f2937; /* Dark container for navigation */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  margin: 0 15px;
+  color: #38bdf8; /* Vibrant blue */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f3f4f6; /* Light text on hover */
+}
+
+/* Main Heading */
+h1 {
+  font-size: 36px;
+  color: #38bdf8; /* Vibrant blue */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Modern shadow */
+}
+
+h3 {
+  font-size: 18px;
+  color: #f3f4f6; /* Light text */
+  margin-bottom: 20px;
+}
+
+/* Form Container Styling */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1f2937; /* Dark modern background */
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #f3f4f6; /* Light text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle modern shadow */
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  margin-left: -12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #374151; /* Darker input background */
+  color: #f9fafb; /* Light text color */
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  background-color: #4b5563; /* Slightly lighter on focus */
+  box-shadow: 0 0 5px #38bdf8; /* Modern blue glow */
+}
+
+input::placeholder {
+  color: #9ca3af; /* Muted gray for placeholders */
+  font-style: italic;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(145deg, #38bdf8, #2563eb); /* Vibrant blue gradient */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(56, 189, 248, 0.3); /* Subtle button shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #2563eb, #38bdf8); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.5); /* Stronger hover shadow */
+}
+
+/* Error Message Styling */
+p {
+  color: #f87171; /* Bright red for errors */
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+/* Form Title Styling */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #e5e7eb; /* Light gray for title */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Add a nice transition for focus and hover effects */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Profile card styling */
+.profile-card {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.profile-card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-card .profile-info {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.profile-card .profile-info span {
+  font-weight: bold;
+}
+
+.profile-card .actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.profile-card .actions button  {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-card .actions button.logout {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.profile-card .actions button.logout:hover {
+  background-color: #d64545;
+}
+
+.profile-card .actions button.edit {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.profile-card .actions button.edit:hover {
+  background-color: #3e8e41;
+}
+
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid  #1b5ecb;
+  object-fit: cover;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-card img:hover {
+  transform: scale(1.1);
+}
+
+.editForm input{
+  background-color:#4b5563;
+}
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background: linear-gradient(145deg, #1f2937, #374151); /* Dark gradient background */
+  color: #f3f4f6; /* Light text color */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Modern shadow */
+}
+
+.user-table thead {
+  background: #2563eb; /* Vibrant blue */
+  color: #f9fafb; /* Light text for header */
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px;
+  border-bottom: 1px solid #4b5563; /* Subtle row separators */
+}
+
+.user-table tbody tr:hover {
+  background: #4b5563; /* Slightly lighter on hover */
+}
+
+.user-table tbody tr:nth-child(even) {
+  background: #1f2937; /* Alternate row color */
+}
+
+.delete-button {
+  padding: 10px 15px;
+  color: white;
+  background: linear-gradient(145deg, #ff6b6b, #d64545); /* Gradient red */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #d64545, #ff6b6b);
+}
+
+.edit-button {
+  padding: 10px 15px;
+  color: white;
+  background: linear-gradient(145deg, #38bdf8, #2563eb); /* Vibrant blue gradient */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.edit-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #2563eb, #38bdf8);
+}
+.suggestions {
+  border: 1px solid #ddd;
+  background: #2563eb;
+  border-radius: 8px;
+  position: absolute;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.suggestions li {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.suggestions li:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.suggestions li:active {
+  background-color: #e0e0e0;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 6px;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.suggestions::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+
